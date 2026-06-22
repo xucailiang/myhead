@@ -1,0 +1,102 @@
+{
+  "generatedAt": "2026-06-16T13:38:59.453Z",
+  "platform": "darwin",
+  "root": "/Users/justin/opensource/myhead/",
+  "codex": {
+    "workspace": "/var/folders/0h/mhzsp68j4h9_kwm__8spqs0w0000gn/T/myhead-codex-smoke-h5t3Hs",
+    "firstOut": "/var/folders/0h/mhzsp68j4h9_kwm__8spqs0w0000gn/T/myhead-codex-smoke-h5t3Hs/codex-first-last-message.txt",
+    "resumeOut": "/var/folders/0h/mhzsp68j4h9_kwm__8spqs0w0000gn/T/myhead-codex-smoke-h5t3Hs/codex-resume-last-message.txt",
+    "sessionId": null,
+    "first": {
+      "command": "codex",
+      "args": [
+        "exec",
+        "--cd",
+        "/var/folders/0h/mhzsp68j4h9_kwm__8spqs0w0000gn/T/myhead-codex-smoke-h5t3Hs",
+        "--dangerously-bypass-approvals-and-sandbox",
+        "--json",
+        "--output-last-message",
+        "/var/folders/0h/mhzsp68j4h9_kwm__8spqs0w0000gn/T/myhead-codex-smoke-h5t3Hs/codex-first-last-message.txt",
+        "-"
+      ],
+      "cwd": "/var/folders/0h/mhzsp68j4h9_kwm__8spqs0w0000gn/T/myhead-codex-smoke-h5t3Hs",
+      "startedAt": "2026-06-16T13:38:59.490Z",
+      "endedAt": "2026-06-16T13:39:06.247Z",
+      "exitCode": 0,
+      "signal": null,
+      "error": null,
+      "stdout": "{\"type\":\"thread.started\",\"thread_id\":\"019ed0a8-1fc3-7da2-b1a1-b284f23cfdcc\"}\n{\"type\":\"turn.started\"}\n{\"type\":\"item.completed\",\"item\":{\"id\":\"item_0\",\"type\":\"error\",\"message\":\"Skill descriptions were shortened to fit the 2% skills context budget. Codex can still see every skill, but some descriptions are shorter. Disable unused skills or plugins to leave more room for the rest.\"}}\n{\"type\":\"item.completed\",\"item\":{\"id\":\"item_1\",\"type\":\"agent_message\",\"text\":\"MYHEAD_CODEX_SMOKE_OK\"}}\n{\"type\":\"turn.completed\",\"usage\":{\"input_tokens\":17771,\"cached_input_tokens\":10624,\"output_tokens\":11,\"reasoning_output_tokens\":0}}\n",
+      "stderr": "2026-06-16T13:38:59.629904Z  WARN codex_core_plugins::remote::remote_installed_plugin_sync: remote installed plugin bundle sync failed error=chatgpt authentication required for remote plugin catalog; api key auth is not supported\n2026-06-16T13:39:00.675973Z  WARN codex_core_plugins::manager: failed to warm featured plugin ids cache error=remote featured plugin request to https://chatgpt.com/backend-api/plugins/featured failed with status 401 Unauthorized: {\"detail\":\"Unauthorized\"}\n2026-06-16T13:39:01.125368Z  WARN codex_core_plugins::manifest: ignoring interface.defaultPrompt[0]: prompt must be at most 128 characters path=/Users/justin/.codex/.tmp/plugins/plugins/ngs-analysis/.codex-plugin/plugin.json\n"
+    },
+    "firstArtifact": "MYHEAD_CODEX_SMOKE_OK",
+    "resume": null,
+    "resumeArtifact": "",
+    "summary": {
+      "name": "codex",
+      "firstExitCode": 0,
+      "resumeExitCode": null,
+      "firstTimedOut": false,
+      "resumeTimedOut": false,
+      "sawExpectedText": true,
+      "likelyAuthOrNetworkFailure": true
+    }
+  },
+  "claude": {
+    "workspace": "/var/folders/0h/mhzsp68j4h9_kwm__8spqs0w0000gn/T/myhead-claude-smoke-gmpPgF",
+    "systemPrompt": "/var/folders/0h/mhzsp68j4h9_kwm__8spqs0w0000gn/T/myhead-claude-smoke-gmpPgF/myhead-system-prompt.md",
+    "sessionId": "9fd9c916-5179-429c-bcdf-36d401fdbfb0",
+    "first": {
+      "command": "claude",
+      "args": [
+        "-p",
+        "--verbose",
+        "--output-format",
+        "stream-json",
+        "--dangerously-skip-permissions",
+        "--append-system-prompt-file",
+        "/var/folders/0h/mhzsp68j4h9_kwm__8spqs0w0000gn/T/myhead-claude-smoke-gmpPgF/myhead-system-prompt.md",
+        "--session-id",
+        "9fd9c916-5179-429c-bcdf-36d401fdbfb0",
+        "Reply exactly: MYHEAD_CLAUDE_SMOKE_OK"
+      ],
+      "cwd": "/var/folders/0h/mhzsp68j4h9_kwm__8spqs0w0000gn/T/myhead-claude-smoke-gmpPgF",
+      "startedAt": "2026-06-16T13:39:06.296Z",
+      "endedAt": "2026-06-16T13:39:11.254Z",
+      "exitCode": 0,
+      "signal": null,
+      "error": null,
+      "stdout": "{\"type\":\"system\",\"subtype\":\"init\",\"cwd\":\"/private/var/folders/0h/mhzsp68j4h9_kwm__8spqs0w0000gn/T/myhead-claude-smoke-gmpPgF\",\"session_id\":\"9fd9c916-5179-429c-bcdf-36d401fdbfb0\",\"tools\":[\"Task\",\"AskUserQuestion\",\"Bash\",\"CronCreate\",\"CronDelete\",\"CronList\",\"Edit\",\"EnterPlanMode\",\"EnterWorktree\",\"ExitPlanMode\",\"ExitWorktree\",\"Glob\",\"Grep\",\"Monitor\",\"NotebookEdit\",\"PushNotification\",\"Read\",\"ScheduleWakeup\",\"Skill\",\"TaskCreate\",\"TaskGet\",\"TaskList\",\"TaskOutput\",\"TaskStop\",\"TaskUpdate\",\"WebFetch\",\"WebSearch\",\"Workflow\",\"Write\"],\"mcp_servers\":[],\"model\":\"deepseek-v4-pro[1m]\",\"permissionMode\":\"bypassPermissions\",\"slash_commands\":[\"theme-factory\",\"setup-matt-pocock-skills\",\"doc-coauthoring\",\"impeccable\",\"improve-codebase-architecture\",\"xlsx\",\"pdf\",\"find-skills\",\"github-searcher\",\"triage\",\"algorithmic-art\",\"diagnose\",\"to-issues\",\"gif-sticker-maker\",\"internal-comms\",\"skill-creator\",\"zoom-out\",\"canvas-design\",\"write-a-skill\",\"pptx\",\"tutor\",\"grill-with-docs\",\"slack-gif-creator\",\"karpathy-guidelines\",\"webapp-testing\",\"frontend-design\",\"caveman\",\"mcp-builder\",\"tdd\",\"grill-me\",\"to-prd\",\"brand-guidelines\",\"docx\",\"modbus-pipeline\",\"inspection-pipeline\",\"web-artifacts-builder\",\"deep-research\",\"update-config\",\"verify\",\"debug\",\"code-review\",\"simplify\",\"batch\",\"fewer-permission-prompts\",\"loop\",\"claude-api\",\"run\",\"run-skill-generator\",\"clear\",\"compact\",\"context\",\"heapdump\",\"init\",\"reload-skills\",\"review\",\"security-review\",\"usage\",\"insights\",\"goal\",\"team-onboarding\"],\"apiKeySource\":\"none\",\"claude_code_version\":\"2.1.153\",\"output_style\":\"default\",\"agents\":[\"claude\",\"Explore\",\"general-purpose\",\"Plan\",\"statusline-setup\"],\"skills\":[\"theme-factory\",\"setup-matt-pocock-skills\",\"doc-coauthoring\",\"impeccable\",\"improve-codebase-architecture\",\"xlsx\",\"pdf\",\"find-skills\",\"github-searcher\",\"triage\",\"algorithmic-art\",\"diagnose\",\"to-issues\",\"gif-sticker-maker\",\"internal-comms\",\"skill-creator\",\"zoom-out\",\"canvas-design\",\"write-a-skill\",\"pptx\",\"tutor\",\"grill-with-docs\",\"slack-gif-creator\",\"karpathy-guidelines\",\"webapp-testing\",\"frontend-design\",\"caveman\",\"mcp-builder\",\"tdd\",\"grill-me\",\"to-prd\",\"brand-guidelines\",\"docx\",\"modbus-pipeline\",\"inspection-pipeline\",\"web-artifacts-builder\",\"deep-research\",\"update-config\",\"verify\",\"debug\",\"code-review\",\"simplify\",\"batch\",\"fewer-permission-prompts\",\"loop\",\"claude-api\",\"run\",\"run-skill-generator\"],\"plugins\":[{\"name\":\"rust-analyzer-lsp\",\"path\":\"/Users/justin/.claude/plugins/cache/claude-plugins-official/rust-analyzer-lsp/1.0.0\",\"source\":\"rust-analyzer-lsp@claude-plugins-official\"}],\"analytics_disabled\":false,\"product_feedback_disabled\":false,\"uuid\":\"2283ccf9-031b-42f8-b7a1-1c2683205639\",\"memory_paths\":{\"auto\":\"/Users/justin/.claude/projects/-private-var-folders-0h-mhzsp68j4h9-kwm--8spqs0w0000gn-T-myhead-claude-smoke-gmpPgF/memory/\"},\"fast_mode_state\":\"off\"}\n{\"type\":\"assistant\",\"message\":{\"id\":\"b2117f24-a6e1-4f6a-a29b-1501997f27db\",\"type\":\"message\",\"role\":\"assistant\",\"model\":\"deepseek-v4-pro\",\"content\":[{\"type\":\"thinking\",\"thinking\":\"The user is asking me to reply with a specific marker string as part of a smoke test. I should not modify any files - just reply with the exact text.\",\"signature\":\"b2117f24-a6e1-4f6a-a29b-1501997f27db\"}],\"stop_reason\":null,\"stop_sequence\":null,\"usage\":{\"input_tokens\":32669,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"service_tier\":\"standard\"},\"context_management\":null},\"parent_tool_use_id\":null,\"session_id\":\"9fd9c916-5179-429c-bcdf-36d401fdbfb0\",\"uuid\":\"f726e2f9-d414-480e-8080-fe692e3e188e\"}\n{\"type\":\"assistant\",\"message\":{\"id\":\"b2117f24-a6e1-4f6a-a29b-1501997f27db\",\"type\":\"message\",\"role\":\"assistant\",\"model\":\"deepseek-v4-pro\",\"content\":[{\"type\":\"text\",\"text\":\"MYHEAD_CLAUDE_SMOKE_OK\"}],\"stop_reason\":null,\"stop_sequence\":null,\"usage\":{\"input_tokens\":32669,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"service_tier\":\"standard\"},\"context_management\":null},\"parent_tool_use_id\":null,\"session_id\":\"9fd9c916-5179-429c-bcdf-36d401fdbfb0\",\"uuid\":\"baa3a296-61bf-41cd-b57d-0658ed8328c9\"}\n{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"api_error_status\":null,\"duration_ms\":4194,\"duration_api_ms\":5912,\"ttft_ms\":4086,\"num_turns\":1,\"result\":\"MYHEAD_CLAUDE_SMOKE_OK\",\"stop_reason\":\"end_turn\",\"session_id\":\"9fd9c916-5179-429c-bcdf-36d401fdbfb0\",\"total_cost_usd\":0.167755,\"usage\":{\"input_tokens\":32669,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":44,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"deepseek-v4-pro[1m]\":{\"inputTokens\":33031,\"outputTokens\":104,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.167755,\"contextWindow\":1000000,\"maxOutputTokens\":32000}},\"permission_denials\":[],\"terminal_reason\":\"completed\",\"fast_mode_state\":\"off\",\"uuid\":\"f12f2461-2357-4c97-90e5-2ebc44ee2a41\"}\n",
+      "stderr": ""
+    },
+    "resume": {
+      "command": "claude",
+      "args": [
+        "-p",
+        "--verbose",
+        "--output-format",
+        "stream-json",
+        "--dangerously-skip-permissions",
+        "--resume",
+        "9fd9c916-5179-429c-bcdf-36d401fdbfb0",
+        "Continue the smoke test. Reply exactly: MYHEAD_CLAUDE_RESUME_OK"
+      ],
+      "cwd": "/var/folders/0h/mhzsp68j4h9_kwm__8spqs0w0000gn/T/myhead-claude-smoke-gmpPgF",
+      "startedAt": "2026-06-16T13:39:11.254Z",
+      "endedAt": "2026-06-16T13:39:16.544Z",
+      "exitCode": 0,
+      "signal": null,
+      "error": null,
+      "stdout": "{\"type\":\"system\",\"subtype\":\"init\",\"cwd\":\"/private/var/folders/0h/mhzsp68j4h9_kwm__8spqs0w0000gn/T/myhead-claude-smoke-gmpPgF\",\"session_id\":\"9fd9c916-5179-429c-bcdf-36d401fdbfb0\",\"tools\":[\"Task\",\"AskUserQuestion\",\"Bash\",\"CronCreate\",\"CronDelete\",\"CronList\",\"Edit\",\"EnterPlanMode\",\"EnterWorktree\",\"ExitPlanMode\",\"ExitWorktree\",\"Glob\",\"Grep\",\"LSP\",\"Monitor\",\"NotebookEdit\",\"PushNotification\",\"Read\",\"ScheduleWakeup\",\"Skill\",\"TaskCreate\",\"TaskGet\",\"TaskList\",\"TaskOutput\",\"TaskStop\",\"TaskUpdate\",\"WebFetch\",\"WebSearch\",\"Workflow\",\"Write\"],\"mcp_servers\":[],\"model\":\"deepseek-v4-pro[1m]\",\"permissionMode\":\"bypassPermissions\",\"slash_commands\":[\"theme-factory\",\"setup-matt-pocock-skills\",\"doc-coauthoring\",\"impeccable\",\"improve-codebase-architecture\",\"xlsx\",\"pdf\",\"find-skills\",\"github-searcher\",\"triage\",\"algorithmic-art\",\"diagnose\",\"to-issues\",\"gif-sticker-maker\",\"internal-comms\",\"skill-creator\",\"zoom-out\",\"canvas-design\",\"write-a-skill\",\"pptx\",\"tutor\",\"grill-with-docs\",\"slack-gif-creator\",\"karpathy-guidelines\",\"webapp-testing\",\"frontend-design\",\"caveman\",\"mcp-builder\",\"tdd\",\"grill-me\",\"to-prd\",\"brand-guidelines\",\"docx\",\"modbus-pipeline\",\"inspection-pipeline\",\"web-artifacts-builder\",\"deep-research\",\"update-config\",\"verify\",\"debug\",\"code-review\",\"simplify\",\"batch\",\"fewer-permission-prompts\",\"loop\",\"claude-api\",\"run\",\"run-skill-generator\",\"clear\",\"compact\",\"context\",\"heapdump\",\"init\",\"reload-skills\",\"review\",\"security-review\",\"usage\",\"insights\",\"goal\",\"team-onboarding\"],\"apiKeySource\":\"none\",\"claude_code_version\":\"2.1.153\",\"output_style\":\"default\",\"agents\":[\"claude\",\"Explore\",\"general-purpose\",\"Plan\",\"statusline-setup\"],\"skills\":[\"theme-factory\",\"setup-matt-pocock-skills\",\"doc-coauthoring\",\"impeccable\",\"improve-codebase-architecture\",\"xlsx\",\"pdf\",\"find-skills\",\"github-searcher\",\"triage\",\"algorithmic-art\",\"diagnose\",\"to-issues\",\"gif-sticker-maker\",\"internal-comms\",\"skill-creator\",\"zoom-out\",\"canvas-design\",\"write-a-skill\",\"pptx\",\"tutor\",\"grill-with-docs\",\"slack-gif-creator\",\"karpathy-guidelines\",\"webapp-testing\",\"frontend-design\",\"caveman\",\"mcp-builder\",\"tdd\",\"grill-me\",\"to-prd\",\"brand-guidelines\",\"docx\",\"modbus-pipeline\",\"inspection-pipeline\",\"web-artifacts-builder\",\"deep-research\",\"update-config\",\"verify\",\"debug\",\"code-review\",\"simplify\",\"batch\",\"fewer-permission-prompts\",\"loop\",\"claude-api\",\"run\",\"run-skill-generator\"],\"plugins\":[{\"name\":\"rust-analyzer-lsp\",\"path\":\"/Users/justin/.claude/plugins/cache/claude-plugins-official/rust-analyzer-lsp/1.0.0\",\"source\":\"rust-analyzer-lsp@claude-plugins-official\"}],\"analytics_disabled\":false,\"product_feedback_disabled\":false,\"uuid\":\"c8f74b33-5f45-47f6-b090-2f0ca48347ac\",\"memory_paths\":{\"auto\":\"/Users/justin/.claude/projects/-private-var-folders-0h-mhzsp68j4h9-kwm--8spqs0w0000gn-T-myhead-claude-smoke-gmpPgF/memory/\"},\"fast_mode_state\":\"off\"}\n{\"type\":\"assistant\",\"message\":{\"id\":\"9b5436df-5c8f-415b-a4e3-418c66b34af2\",\"type\":\"message\",\"role\":\"assistant\",\"model\":\"deepseek-v4-pro\",\"content\":[{\"type\":\"thinking\",\"thinking\":\"The user wants me to continue a smoke test by replying with the exact string they specified.\",\"signature\":\"9b5436df-5c8f-415b-a4e3-418c66b34af2\"}],\"stop_reason\":null,\"stop_sequence\":null,\"usage\":{\"input_tokens\":33145,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"service_tier\":\"standard\"},\"context_management\":null},\"parent_tool_use_id\":null,\"session_id\":\"9fd9c916-5179-429c-bcdf-36d401fdbfb0\",\"uuid\":\"72182224-a6d8-4bad-8297-8ce66eb82046\"}\n{\"type\":\"assistant\",\"message\":{\"id\":\"9b5436df-5c8f-415b-a4e3-418c66b34af2\",\"type\":\"message\",\"role\":\"assistant\",\"model\":\"deepseek-v4-pro\",\"content\":[{\"type\":\"text\",\"text\":\"MYHEAD_CLAUDE_RESUME_OK\"}],\"stop_reason\":null,\"stop_sequence\":null,\"usage\":{\"input_tokens\":33145,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"service_tier\":\"standard\"},\"context_management\":null},\"parent_tool_use_id\":null,\"session_id\":\"9fd9c916-5179-429c-bcdf-36d401fdbfb0\",\"uuid\":\"b5bcd246-76a4-4c31-bf7a-5aa977f8db98\"}\n{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"api_error_status\":null,\"duration_ms\":4475,\"duration_api_ms\":4442,\"ttft_ms\":4412,\"num_turns\":1,\"result\":\"MYHEAD_CLAUDE_RESUME_OK\",\"stop_reason\":\"end_turn\",\"session_id\":\"9fd9c916-5179-429c-bcdf-36d401fdbfb0\",\"total_cost_usd\":0.16642500000000002,\"usage\":{\"input_tokens\":33145,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":28,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"deepseek-v4-pro[1m]\":{\"inputTokens\":33145,\"outputTokens\":28,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.16642500000000002,\"contextWindow\":1000000,\"maxOutputTokens\":32000}},\"permission_denials\":[],\"terminal_reason\":\"completed\",\"fast_mode_state\":\"off\",\"uuid\":\"671f16e9-59e3-4adb-b1d0-ff088dcbbb1d\"}\n",
+      "stderr": ""
+    },
+    "summary": {
+      "name": "claude",
+      "firstExitCode": 0,
+      "resumeExitCode": 0,
+      "firstTimedOut": false,
+      "resumeTimedOut": false,
+      "sawExpectedText": true,
+      "likelyAuthOrNetworkFailure": true
+    }
+  }
+}

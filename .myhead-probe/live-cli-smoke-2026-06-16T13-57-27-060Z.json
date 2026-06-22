@@ -1,0 +1,124 @@
+{
+  "generatedAt": "2026-06-16T13:57:27.060Z",
+  "platform": "darwin",
+  "root": "/Users/justin/opensource/myhead/",
+  "codex": {
+    "workspace": "/var/folders/0h/mhzsp68j4h9_kwm__8spqs0w0000gn/T/myhead-codex-smoke-f6DE22",
+    "firstOut": "/var/folders/0h/mhzsp68j4h9_kwm__8spqs0w0000gn/T/myhead-codex-smoke-f6DE22/codex-first-last-message.txt",
+    "resumeOut": "/var/folders/0h/mhzsp68j4h9_kwm__8spqs0w0000gn/T/myhead-codex-smoke-f6DE22/codex-resume-last-message.txt",
+    "sessionId": "019ed0b9-0660-73c3-ba10-7d4e741274c3",
+    "first": {
+      "command": "codex",
+      "args": [
+        "exec",
+        "--cd",
+        "/var/folders/0h/mhzsp68j4h9_kwm__8spqs0w0000gn/T/myhead-codex-smoke-f6DE22",
+        "--dangerously-bypass-approvals-and-sandbox",
+        "--json",
+        "--output-last-message",
+        "/var/folders/0h/mhzsp68j4h9_kwm__8spqs0w0000gn/T/myhead-codex-smoke-f6DE22/codex-first-last-message.txt",
+        "-"
+      ],
+      "cwd": "/var/folders/0h/mhzsp68j4h9_kwm__8spqs0w0000gn/T/myhead-codex-smoke-f6DE22",
+      "startedAt": "2026-06-16T13:57:27.094Z",
+      "endedAt": "2026-06-16T13:57:34.911Z",
+      "exitCode": 0,
+      "signal": null,
+      "error": null,
+      "stdout": "{\"type\":\"thread.started\",\"thread_id\":\"019ed0b9-0660-73c3-ba10-7d4e741274c3\"}\n{\"type\":\"turn.started\"}\n{\"type\":\"item.completed\",\"item\":{\"id\":\"item_0\",\"type\":\"error\",\"message\":\"Skill descriptions were shortened to fit the 2% skills context budget. Codex can still see every skill, but some descriptions are shorter. Disable unused skills or plugins to leave more room for the rest.\"}}\n{\"type\":\"item.completed\",\"item\":{\"id\":\"item_1\",\"type\":\"agent_message\",\"text\":\"MYHEAD_CODEX_SMOKE_OK\"}}\n{\"type\":\"turn.completed\",\"usage\":{\"input_tokens\":17769,\"cached_input_tokens\":10624,\"output_tokens\":22,\"reasoning_output_tokens\":9}}\n",
+      "stderr": "2026-06-16T13:57:27.242695Z  WARN codex_core_plugins::remote::remote_installed_plugin_sync: remote installed plugin bundle sync failed error=chatgpt authentication required for remote plugin catalog; api key auth is not supported\n2026-06-16T13:57:28.438802Z  WARN codex_core_plugins::manifest: ignoring interface.defaultPrompt[0]: prompt must be at most 128 characters path=/Users/justin/.codex/.tmp/plugins/plugins/ngs-analysis/.codex-plugin/plugin.json\n2026-06-16T13:57:28.459018Z  WARN codex_core_plugins::manager: failed to warm featured plugin ids cache error=remote featured plugin request to https://chatgpt.com/backend-api/plugins/featured failed with status 401 Unauthorized: {\"detail\":\"Unauthorized\"}\n"
+    },
+    "firstArtifact": "MYHEAD_CODEX_SMOKE_OK",
+    "resume": {
+      "command": "codex",
+      "args": [
+        "exec",
+        "--cd",
+        "/var/folders/0h/mhzsp68j4h9_kwm__8spqs0w0000gn/T/myhead-codex-smoke-f6DE22",
+        "--dangerously-bypass-approvals-and-sandbox",
+        "resume",
+        "--json",
+        "--output-last-message",
+        "/var/folders/0h/mhzsp68j4h9_kwm__8spqs0w0000gn/T/myhead-codex-smoke-f6DE22/codex-resume-last-message.txt",
+        "019ed0b9-0660-73c3-ba10-7d4e741274c3",
+        "-"
+      ],
+      "cwd": "/var/folders/0h/mhzsp68j4h9_kwm__8spqs0w0000gn/T/myhead-codex-smoke-f6DE22",
+      "startedAt": "2026-06-16T13:57:34.912Z",
+      "endedAt": "2026-06-16T13:57:42.298Z",
+      "exitCode": 0,
+      "signal": null,
+      "error": null,
+      "stdout": "{\"type\":\"thread.started\",\"thread_id\":\"019ed0b9-0660-73c3-ba10-7d4e741274c3\"}\n{\"type\":\"turn.started\"}\n{\"type\":\"item.completed\",\"item\":{\"id\":\"item_0\",\"type\":\"agent_message\",\"text\":\"MYHEAD_CODEX_RESUME_OK\"}}\n{\"type\":\"turn.completed\",\"usage\":{\"input_tokens\":35570,\"cached_input_tokens\":27904,\"output_tokens\":33,\"reasoning_output_tokens\":9}}\n",
+      "stderr": "2026-06-16T13:57:34.973957Z  WARN codex_core_plugins::remote::remote_installed_plugin_sync: remote installed plugin bundle sync failed error=chatgpt authentication required for remote plugin catalog; api key auth is not supported\n2026-06-16T13:57:36.148421Z  WARN codex_core_plugins::manifest: ignoring interface.defaultPrompt[0]: prompt must be at most 128 characters path=/Users/justin/.codex/.tmp/plugins/plugins/ngs-analysis/.codex-plugin/plugin.json\n2026-06-16T13:57:36.220132Z  WARN codex_core_plugins::manager: failed to warm featured plugin ids cache error=remote featured plugin request to https://chatgpt.com/backend-api/plugins/featured failed with status 401 Unauthorized: {\"detail\":\"Unauthorized\"}\n"
+    },
+    "resumeArtifact": "MYHEAD_CODEX_RESUME_OK",
+    "summary": {
+      "name": "codex",
+      "firstExitCode": 0,
+      "resumeExitCode": 0,
+      "firstTimedOut": false,
+      "resumeTimedOut": false,
+      "sawExpectedText": true,
+      "likelyAuthOrNetworkFailure": false
+    }
+  },
+  "claude": {
+    "workspace": "/var/folders/0h/mhzsp68j4h9_kwm__8spqs0w0000gn/T/myhead-claude-smoke-ZAfSTJ",
+    "systemPrompt": "/var/folders/0h/mhzsp68j4h9_kwm__8spqs0w0000gn/T/myhead-claude-smoke-ZAfSTJ/myhead-system-prompt.md",
+    "sessionId": "5b6c0c02-0a6b-4dfe-89b5-ad5bd8d1e039",
+    "first": {
+      "command": "claude",
+      "args": [
+        "-p",
+        "--verbose",
+        "--output-format",
+        "stream-json",
+        "--dangerously-skip-permissions",
+        "--append-system-prompt-file",
+        "/var/folders/0h/mhzsp68j4h9_kwm__8spqs0w0000gn/T/myhead-claude-smoke-ZAfSTJ/myhead-system-prompt.md",
+        "--session-id",
+        "5b6c0c02-0a6b-4dfe-89b5-ad5bd8d1e039",
+        "Reply exactly: MYHEAD_CLAUDE_SMOKE_OK"
+      ],
+      "cwd": "/var/folders/0h/mhzsp68j4h9_kwm__8spqs0w0000gn/T/myhead-claude-smoke-ZAfSTJ",
+      "startedAt": "2026-06-16T13:57:42.352Z",
+      "endedAt": "2026-06-16T13:57:47.514Z",
+      "exitCode": 0,
+      "signal": null,
+      "error": null,
+      "stdout": "{\"type\":\"system\",\"subtype\":\"init\",\"cwd\":\"/private/var/folders/0h/mhzsp68j4h9_kwm__8spqs0w0000gn/T/myhead-claude-smoke-ZAfSTJ\",\"session_id\":\"5b6c0c02-0a6b-4dfe-89b5-ad5bd8d1e039\",\"tools\":[\"Task\",\"AskUserQuestion\",\"Bash\",\"CronCreate\",\"CronDelete\",\"CronList\",\"Edit\",\"EnterPlanMode\",\"EnterWorktree\",\"ExitPlanMode\",\"ExitWorktree\",\"Glob\",\"Grep\",\"Monitor\",\"NotebookEdit\",\"PushNotification\",\"Read\",\"ScheduleWakeup\",\"Skill\",\"TaskCreate\",\"TaskGet\",\"TaskList\",\"TaskOutput\",\"TaskStop\",\"TaskUpdate\",\"WebFetch\",\"WebSearch\",\"Workflow\",\"Write\"],\"mcp_servers\":[],\"model\":\"deepseek-v4-pro[1m]\",\"permissionMode\":\"bypassPermissions\",\"slash_commands\":[\"theme-factory\",\"setup-matt-pocock-skills\",\"doc-coauthoring\",\"impeccable\",\"improve-codebase-architecture\",\"xlsx\",\"pdf\",\"find-skills\",\"github-searcher\",\"triage\",\"algorithmic-art\",\"diagnose\",\"to-issues\",\"gif-sticker-maker\",\"internal-comms\",\"skill-creator\",\"zoom-out\",\"canvas-design\",\"write-a-skill\",\"pptx\",\"tutor\",\"grill-with-docs\",\"slack-gif-creator\",\"karpathy-guidelines\",\"webapp-testing\",\"frontend-design\",\"caveman\",\"mcp-builder\",\"tdd\",\"grill-me\",\"to-prd\",\"brand-guidelines\",\"docx\",\"modbus-pipeline\",\"inspection-pipeline\",\"web-artifacts-builder\",\"deep-research\",\"update-config\",\"verify\",\"debug\",\"code-review\",\"simplify\",\"batch\",\"fewer-permission-prompts\",\"loop\",\"claude-api\",\"run\",\"run-skill-generator\",\"clear\",\"compact\",\"context\",\"heapdump\",\"init\",\"reload-skills\",\"review\",\"security-review\",\"usage\",\"insights\",\"goal\",\"team-onboarding\"],\"apiKeySource\":\"none\",\"claude_code_version\":\"2.1.153\",\"output_style\":\"default\",\"agents\":[\"claude\",\"Explore\",\"general-purpose\",\"Plan\",\"statusline-setup\"],\"skills\":[\"theme-factory\",\"setup-matt-pocock-skills\",\"doc-coauthoring\",\"impeccable\",\"improve-codebase-architecture\",\"xlsx\",\"pdf\",\"find-skills\",\"github-searcher\",\"triage\",\"algorithmic-art\",\"diagnose\",\"to-issues\",\"gif-sticker-maker\",\"internal-comms\",\"skill-creator\",\"zoom-out\",\"canvas-design\",\"write-a-skill\",\"pptx\",\"tutor\",\"grill-with-docs\",\"slack-gif-creator\",\"karpathy-guidelines\",\"webapp-testing\",\"frontend-design\",\"caveman\",\"mcp-builder\",\"tdd\",\"grill-me\",\"to-prd\",\"brand-guidelines\",\"docx\",\"modbus-pipeline\",\"inspection-pipeline\",\"web-artifacts-builder\",\"deep-research\",\"update-config\",\"verify\",\"debug\",\"code-review\",\"simplify\",\"batch\",\"fewer-permission-prompts\",\"loop\",\"claude-api\",\"run\",\"run-skill-generator\"],\"plugins\":[{\"name\":\"rust-analyzer-lsp\",\"path\":\"/Users/justin/.claude/plugins/cache/claude-plugins-official/rust-analyzer-lsp/1.0.0\",\"source\":\"rust-analyzer-lsp@claude-plugins-official\"}],\"analytics_disabled\":false,\"product_feedback_disabled\":false,\"uuid\":\"4b6c3b99-de52-4238-bb3a-044038b5ffe7\",\"memory_paths\":{\"auto\":\"/Users/justin/.claude/projects/-private-var-folders-0h-mhzsp68j4h9-kwm--8spqs0w0000gn-T-myhead-claude-smoke-ZAfSTJ/memory/\"},\"fast_mode_state\":\"off\"}\n{\"type\":\"assistant\",\"message\":{\"id\":\"07d34a57-4310-420e-be3d-f33f73b4c656\",\"type\":\"message\",\"role\":\"assistant\",\"model\":\"deepseek-v4-pro\",\"content\":[{\"type\":\"thinking\",\"thinking\":\"The user is asking me to reply with an exact string \\\"MYHEAD_CLAUDE_SMOKE_OK\\\" as part of a smoke test. The instructions say I'm running a MyHead smoke test and should not modify files, just reply with the exact requested marker.\",\"signature\":\"07d34a57-4310-420e-be3d-f33f73b4c656\"}],\"stop_reason\":null,\"stop_sequence\":null,\"usage\":{\"input_tokens\":32668,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"service_tier\":\"standard\"},\"context_management\":null},\"parent_tool_use_id\":null,\"session_id\":\"5b6c0c02-0a6b-4dfe-89b5-ad5bd8d1e039\",\"uuid\":\"f239820d-278e-4ce1-aa98-96d23b89b790\"}\n{\"type\":\"assistant\",\"message\":{\"id\":\"07d34a57-4310-420e-be3d-f33f73b4c656\",\"type\":\"message\",\"role\":\"assistant\",\"model\":\"deepseek-v4-pro\",\"content\":[{\"type\":\"text\",\"text\":\"MYHEAD_CLAUDE_SMOKE_OK\"}],\"stop_reason\":null,\"stop_sequence\":null,\"usage\":{\"input_tokens\":32668,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"service_tier\":\"standard\"},\"context_management\":null},\"parent_tool_use_id\":null,\"session_id\":\"5b6c0c02-0a6b-4dfe-89b5-ad5bd8d1e039\",\"uuid\":\"a627ca63-95fa-4ac5-964b-c7880a24b1aa\"}\n{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"api_error_status\":null,\"duration_ms\":4365,\"duration_api_ms\":8519,\"ttft_ms\":4274,\"num_turns\":1,\"result\":\"MYHEAD_CLAUDE_SMOKE_OK\",\"stop_reason\":\"end_turn\",\"session_id\":\"5b6c0c02-0a6b-4dfe-89b5-ad5bd8d1e039\",\"total_cost_usd\":0.17260000000000003,\"usage\":{\"input_tokens\":32668,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":66,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"deepseek-v4-pro[1m]\":{\"inputTokens\":33030,\"outputTokens\":298,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.17260000000000003,\"contextWindow\":1000000,\"maxOutputTokens\":32000}},\"permission_denials\":[],\"terminal_reason\":\"completed\",\"fast_mode_state\":\"off\",\"uuid\":\"c38fd038-0d5f-431b-a108-807648c634fa\"}\n",
+      "stderr": ""
+    },
+    "resume": {
+      "command": "claude",
+      "args": [
+        "-p",
+        "--verbose",
+        "--output-format",
+        "stream-json",
+        "--dangerously-skip-permissions",
+        "--resume",
+        "5b6c0c02-0a6b-4dfe-89b5-ad5bd8d1e039",
+        "Continue the smoke test. Reply exactly: MYHEAD_CLAUDE_RESUME_OK"
+      ],
+      "cwd": "/var/folders/0h/mhzsp68j4h9_kwm__8spqs0w0000gn/T/myhead-claude-smoke-ZAfSTJ",
+      "startedAt": "2026-06-16T13:57:47.514Z",
+      "endedAt": "2026-06-16T13:57:52.718Z",
+      "exitCode": 0,
+      "signal": null,
+      "error": null,
+      "stdout": "{\"type\":\"system\",\"subtype\":\"init\",\"cwd\":\"/private/var/folders/0h/mhzsp68j4h9_kwm__8spqs0w0000gn/T/myhead-claude-smoke-ZAfSTJ\",\"session_id\":\"5b6c0c02-0a6b-4dfe-89b5-ad5bd8d1e039\",\"tools\":[\"Task\",\"AskUserQuestion\",\"Bash\",\"CronCreate\",\"CronDelete\",\"CronList\",\"Edit\",\"EnterPlanMode\",\"EnterWorktree\",\"ExitPlanMode\",\"ExitWorktree\",\"Glob\",\"Grep\",\"LSP\",\"Monitor\",\"NotebookEdit\",\"PushNotification\",\"Read\",\"ScheduleWakeup\",\"Skill\",\"TaskCreate\",\"TaskGet\",\"TaskList\",\"TaskOutput\",\"TaskStop\",\"TaskUpdate\",\"WebFetch\",\"WebSearch\",\"Workflow\",\"Write\"],\"mcp_servers\":[],\"model\":\"deepseek-v4-pro[1m]\",\"permissionMode\":\"bypassPermissions\",\"slash_commands\":[\"theme-factory\",\"setup-matt-pocock-skills\",\"doc-coauthoring\",\"impeccable\",\"improve-codebase-architecture\",\"xlsx\",\"pdf\",\"find-skills\",\"github-searcher\",\"triage\",\"algorithmic-art\",\"diagnose\",\"to-issues\",\"gif-sticker-maker\",\"internal-comms\",\"skill-creator\",\"zoom-out\",\"canvas-design\",\"write-a-skill\",\"pptx\",\"tutor\",\"grill-with-docs\",\"slack-gif-creator\",\"karpathy-guidelines\",\"webapp-testing\",\"frontend-design\",\"caveman\",\"mcp-builder\",\"tdd\",\"grill-me\",\"to-prd\",\"brand-guidelines\",\"docx\",\"modbus-pipeline\",\"inspection-pipeline\",\"web-artifacts-builder\",\"deep-research\",\"update-config\",\"verify\",\"debug\",\"code-review\",\"simplify\",\"batch\",\"fewer-permission-prompts\",\"loop\",\"claude-api\",\"run\",\"run-skill-generator\",\"clear\",\"compact\",\"context\",\"heapdump\",\"init\",\"reload-skills\",\"review\",\"security-review\",\"usage\",\"insights\",\"goal\",\"team-onboarding\"],\"apiKeySource\":\"none\",\"claude_code_version\":\"2.1.153\",\"output_style\":\"default\",\"agents\":[\"claude\",\"Explore\",\"general-purpose\",\"Plan\",\"statusline-setup\"],\"skills\":[\"theme-factory\",\"setup-matt-pocock-skills\",\"doc-coauthoring\",\"impeccable\",\"improve-codebase-architecture\",\"xlsx\",\"pdf\",\"find-skills\",\"github-searcher\",\"triage\",\"algorithmic-art\",\"diagnose\",\"to-issues\",\"gif-sticker-maker\",\"internal-comms\",\"skill-creator\",\"zoom-out\",\"canvas-design\",\"write-a-skill\",\"pptx\",\"tutor\",\"grill-with-docs\",\"slack-gif-creator\",\"karpathy-guidelines\",\"webapp-testing\",\"frontend-design\",\"caveman\",\"mcp-builder\",\"tdd\",\"grill-me\",\"to-prd\",\"brand-guidelines\",\"docx\",\"modbus-pipeline\",\"inspection-pipeline\",\"web-artifacts-builder\",\"deep-research\",\"update-config\",\"verify\",\"debug\",\"code-review\",\"simplify\",\"batch\",\"fewer-permission-prompts\",\"loop\",\"claude-api\",\"run\",\"run-skill-generator\"],\"plugins\":[{\"name\":\"rust-analyzer-lsp\",\"path\":\"/Users/justin/.claude/plugins/cache/claude-plugins-official/rust-analyzer-lsp/1.0.0\",\"source\":\"rust-analyzer-lsp@claude-plugins-official\"}],\"analytics_disabled\":false,\"product_feedback_disabled\":false,\"uuid\":\"02e2a8b9-172b-4210-87a0-d32a70094658\",\"memory_paths\":{\"auto\":\"/Users/justin/.claude/projects/-private-var-folders-0h-mhzsp68j4h9-kwm--8spqs0w0000gn-T-myhead-claude-smoke-ZAfSTJ/memory/\"},\"fast_mode_state\":\"off\"}\n{\"type\":\"assistant\",\"message\":{\"id\":\"ee29b713-293a-477c-9f84-ef0eca64730e\",\"type\":\"message\",\"role\":\"assistant\",\"model\":\"deepseek-v4-pro\",\"content\":[{\"type\":\"thinking\",\"thinking\":\"The user wants me to continue a smoke test by replying exactly \\\"MYHEAD_CLAUDE_RESUME_OK\\\".\",\"signature\":\"ee29b713-293a-477c-9f84-ef0eca64730e\"}],\"stop_reason\":null,\"stop_sequence\":null,\"usage\":{\"input_tokens\":33144,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"service_tier\":\"standard\"},\"context_management\":null},\"parent_tool_use_id\":null,\"session_id\":\"5b6c0c02-0a6b-4dfe-89b5-ad5bd8d1e039\",\"uuid\":\"40ff3419-bdd1-4b21-96eb-a1bc891847c6\"}\n{\"type\":\"assistant\",\"message\":{\"id\":\"ee29b713-293a-477c-9f84-ef0eca64730e\",\"type\":\"message\",\"role\":\"assistant\",\"model\":\"deepseek-v4-pro\",\"content\":[{\"type\":\"text\",\"text\":\"MYHEAD_CLAUDE_RESUME_OK\"}],\"stop_reason\":null,\"stop_sequence\":null,\"usage\":{\"input_tokens\":33144,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"service_tier\":\"standard\"},\"context_management\":null},\"parent_tool_use_id\":null,\"session_id\":\"5b6c0c02-0a6b-4dfe-89b5-ad5bd8d1e039\",\"uuid\":\"28ba17cf-b7ac-4c89-86f4-201e35c16041\"}\n{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"api_error_status\":null,\"duration_ms\":4405,\"duration_api_ms\":4373,\"ttft_ms\":4231,\"num_turns\":1,\"result\":\"MYHEAD_CLAUDE_RESUME_OK\",\"stop_reason\":\"end_turn\",\"session_id\":\"5b6c0c02-0a6b-4dfe-89b5-ad5bd8d1e039\",\"total_cost_usd\":0.16652,\"usage\":{\"input_tokens\":33144,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":32,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"deepseek-v4-pro[1m]\":{\"inputTokens\":33144,\"outputTokens\":32,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.16652,\"contextWindow\":1000000,\"maxOutputTokens\":32000}},\"permission_denials\":[],\"terminal_reason\":\"completed\",\"fast_mode_state\":\"off\",\"uuid\":\"6807984d-a251-4331-91f1-0befc1ddaa1b\"}\n",
+      "stderr": ""
+    },
+    "summary": {
+      "name": "claude",
+      "firstExitCode": 0,
+      "resumeExitCode": 0,
+      "firstTimedOut": false,
+      "resumeTimedOut": false,
+      "sawExpectedText": true,
+      "likelyAuthOrNetworkFailure": false
+    }
+  }
+}
