@@ -1,0 +1,17 @@
+{
+  "name": "myhead",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@10.33.2",
+  "type": "module",
+  "scripts": {
+    "typecheck": "pnpm -r --workspace-concurrency=4 --if-present run typecheck"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.0"
+  },
+  "engines": {
+    "node": "~24",
+    "pnpm": ">=10.33.2 <11"
+  }
+}

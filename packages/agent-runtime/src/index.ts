@@ -1,0 +1,11 @@
+export * from './types.js';
+export * from './capabilities.js';
+export * from './detection.js';
+export * from './registry.js';
+export * from './launch.js';
+export * from './invocation.js';
+export * from './run-agent.js';
+export { claudeAgentDef } from './defs/claude.js';
+export { codexAgentDef } from './defs/codex.js';
+export { createClaudeStreamHandler } from './parsers/claude-stream.js';
+export { createJsonEventStreamHandler } from './parsers/json-event-stream.js';
